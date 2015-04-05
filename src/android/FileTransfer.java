@@ -723,7 +723,7 @@ public class FileTransfer extends CordovaPlugin {
          * return a Whitelist object. Since the fixed whitelist is removed in Cordova 4.x,
          * the correct call now is to shouldAllowRequest from the plugin manager.
          */
-        Boolean shouldAllowRequest = null;
+        Boolean shouldAllowRequest = true;
         if (isLocalTransfer) {
             shouldAllowRequest = true;
         }
